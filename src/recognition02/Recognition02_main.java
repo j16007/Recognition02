@@ -13,7 +13,7 @@ public class Recognition02_main {
 
 	public static void main(String[] args){
 		VisualRecognition service = new VisualRecognition("2018-03-19");
-		service.setApiKey("j16007");
+		service.setApiKey("2bc56147bf74a472e3923ac7cab032c362963655");
 
 		InputStream imagesStream = null;
 		try {
@@ -30,5 +30,6 @@ public class Recognition02_main {
 		  .build();
 		ClassifiedImages result = service.classify(classifyOptions).execute();
 		System.out.println(result);
+
 	}
 }
